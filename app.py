@@ -110,12 +110,7 @@ if not st.session_state["logged_in"]:
         st.markdown(f"[👉 Contact Admin Support on WhatsApp](https://wa.me/{WHATSAPP_NUMBER}?text=Hi%20Muhammad%20Danish,%20I%20need%20help%20with%20my%20Payroll%20Account)")
 
     with col2:
-        st.info("""
-        💡 **Testing Accounts:**
-        - **Active Account:** `user@company.com` | Password: `password123`
-        - **Expired Account:** `expired@company.com` | Password: `password123`
-        """)
-    st.stop()
+        st.stop()
 
 # ---------------- 2. SUBSCRIPTION CONTROL BLOCK ----------------
 user_info = get_user_from_db(st.session_state["user_email"])
