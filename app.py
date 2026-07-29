@@ -44,7 +44,7 @@ def init_db():
     # Insert default testing accounts if table is empty
     cursor.execute("SELECT COUNT(*) FROM users")
     if cursor.fetchone()[0] == 0:
-        cursor.execute("INSERT INTO users VALUES ('user@company.com', 'password123', 'Ali Tech Agency', 'Active', '2026-12-31')")
+        cursor.execute("INSERT INTO users VALUES ('danish@gmail.com', 'mypassword123', 'Ali Tech Agency', 'Active', '2026-12-31')")
         cursor.execute("INSERT INTO users VALUES ('expired@company.com', 'password123', 'Expired Client', 'Expired', '2026-01-01')")
     
     conn.commit()
